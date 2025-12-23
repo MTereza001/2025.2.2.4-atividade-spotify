@@ -1,0 +1,243 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #121212;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* TOPO */
+.topo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px;
+}
+
+.topo h1 {
+    font-size: 1.5rem;
+}
+
+.icone {
+    font-size: 1.3rem;
+}
+
+/* SEÇÕES */
+.secao {
+    padding: 16px;
+}
+
+.secao h2 {
+    margin-bottom: 12px;
+}
+
+/* LISTAS HORIZONTAIS */
+.recentes,
+.carousel {
+    display: flex;
+    gap: 12px;
+    overflow-x: auto;
+}
+
+/* CARDS PADRÃO */
+.card,
+.card-grande {
+    min-width: 140px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card img,
+.card-grande img {
+    width: 140px;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 12px;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.card p,
+.card-grande p {
+    margin-top: 6px;
+}
+
+/* HOVER (não depende de foco) */
+.card:hover,
+.card-grande:hover,
+.card-radio:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.5);
+}
+
+.card:hover img,
+.card-grande:hover img,
+.card-radio:hover img {
+    transform: scale(1.05);
+}
+
+/* RÁDIO */
+.card-radio {
+    min-width: 160px;
+    padding: 12px;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.35);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-radio img {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.card-radio p {
+    margin-top: 12px;
+    font-weight: 500;
+}
+
+/* CORES + GRADIENTES */
+.verde {
+    background: linear-gradient(135deg, #6ee7b7, #34d399);
+    color: #000;
+}
+
+.azul {
+    background: linear-gradient(135deg, #60a5fa, #3b82f6);
+    color: #000;
+}
+
+.roxo {
+    background: linear-gradient(135deg, #c084fc, #a855f7);
+    color: #000;
+}
+
+/* MENU */
+.menu {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background: #000;
+    display: flex;
+    justify-content: space-around;
+    padding: 12px 0;
+}
+
+.menu a {
+    color: #b3b3b3;
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: color 0.3s ease;
+}
+
+.menu a:hover {
+    color: #fff;
+}
+
+/* TABLET */
+/* =========================
+   TABLET
+   ========================= */
+@media (min-width: 768px) {
+
+    body {
+        font-size: 16px;
+    }
+
+    .topo h1 {
+        font-size: 1.8rem;
+    }
+
+    .secao {
+        padding: 24px;
+    }
+
+    .card,
+    .card-grande {
+        min-width: 180px;
+    }
+
+    .card img,
+    .card-grande img {
+        width: 180px;
+        height: 180px;
+    }
+
+    .card-radio {
+        min-width: 200px;
+    }
+
+    .card-radio img {
+        width: 160px;
+        height: 160px;
+    }
+
+    .menu a {
+        font-size: 0.85rem;
+    }
+}
+
+
+/* DESKTOP */
+
+@media (min-width: 1024px) {
+
+    body {
+        max-width: 1200px;
+        margin: 0 auto;
+        font-size: 17px;
+    }
+
+    .topo {
+        padding: 24px 0;
+    }
+
+    .secao {
+        padding: 32px 0;
+    }
+
+    .recentes,
+    .carousel {
+        gap: 20px;
+    }
+
+    .card,
+    .card-grande {
+        min-width: 200px;
+    }
+
+    .card img,
+    .card-grande img {
+        width: 200px;
+        height: 200px;
+    }
+
+    .card-radio {
+        min-width: 220px;
+    }
+
+    .menu {
+        position: static;
+        margin-top: 32px;
+    }
+
+    .menu a {
+        flex-direction: row;
+        gap: 8px;
+        font-size: 0.9rem;
+    }
+
+    .menu a span {
+        display: inline;
+    }
+}
+
