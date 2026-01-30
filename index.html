@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify Clone</title>
+    <link rel="stylesheet" href="spotify.css">
+</head>
+<body>
+
+<div class="app">
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+        <h1 class="logo">Spotify</h1>
+        <nav>
+            <a href="#" class="ativo">Início</a>
+            <a href="#">Buscar</a>
+            <a href="#">Sua Biblioteca</a>
+        </nav>
+    </aside>
+
+    <!-- TOPO -->
+    <header class="topo">
+        <h2>Boa tarde, Tereza</h2>
+        <input 
+            type="search"
+            class="busca"
+            placeholder="O que você quer ouvir?"
+            aria-label="Buscar músicas"
+        />
+    </header>
+
+    <!-- CONTEÚDO -->
+    <main class="main">
+
+        <!-- TOCADOS RECENTEMENTE -->
+        <section class="secao">
+            <h3>Tocados recentemente</h3>
+
+            <div class="grid">
+                <div class="card">
+                    <img src="anavitoria.jpg" alt="Ana Vitória">
+                    <p>Lisboa</p>
+                </div>
+
+                <div class="card">
+                    <img src="laufey.jpg" alt="Laufey">
+                    <p>Laufey</p>
+                </div>
+
+                <div class="card">
+                    <img src="dudabeat.jpg" alt="dudabeat">
+                    <p>Dudabeat</p>
+                </div>
+
+                 <div class="card">
+                    <img src="abba.jpg" alt="abba">
+                    <p>Abba</p>
+                </div>
+
+                <div class="card">
+                    <img src="chanpel.jpg" alt="Chanpel">
+                    <p>Chanpel</p>
+                </div>
+
+                <div class="card">
+                    <img src="gorilaz.jpg" alt="Gorillaz">
+                    <p>Gorillaz</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- FEITO PARA VOCÊ -->
+        <section class="secao">
+            <h3>Feito para você</h3>
+
+            <div class="grid">
+                <div class="card">
+                    <img src="tears.jpg" alt="Flashback">
+                    <p>Flashback</p>
+                </div>
+
+                <div class="card">
+                    <img src="beatles.jpg" alt="Rock">
+                    <p>Rock</p>
+                </div>
+
+                <div class="card">
+                    <img src="urias.jpg" alt="Pop Brasil">
+                    <p>Pop Brasil</p>
+                </div>
+
+                <div class="card">
+                    <img src="calcinhapreta.jpg" alt="Forró">
+                    <p>Forró</p>
+                </div>
+
+                <div class="card">
+                    <img src="Zévaqueiro.jpg" alt="Piseiro">
+                    <p>Piseiro</p>
+                </div>
+
+                <div class="card">
+                    <img src="seujorge.jpg" alt="Samba">
+                    <p>Samba</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ESTAÇÕES -->
+        <section class="secao">
+            <h3>Estações recomendadas</h3>
+
+            <div class="carousel">
+                <div class="card-radio verde">
+                    <img src="marina.jpg" alt="Rádio de Maria">
+                    <p>Rádio de Maria</p>
+                </div>
+
+                <div class="card-radio azul">
+                    <img src="chanpel.jpg" alt="Rádio de Luana">
+                    <p>Rádio de Luana</p>
+                </div>
+
+                <div class="card-radio roxo">
+                    <img src="tears.jpg" alt="Rádio de Matheus">
+                    <p>Rádio de Matheus</p>
+                </div>
+
+                <div class="card-radio laranja">
+                    <img src="mastruz.jpg" alt="Rádio de Matheus">
+                    <p>Rádio de Matheus</p>
+                </div>
+
+                <div class="card-radio amarela">
+                    <img src="Zévaqueiro.jpg" alt="Rádio de Matheus">
+                    <p>Rádio de Matheus</p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- PLAYER -->
+    <footer class="player">
+        <div class="musica">
+            <img 
+                src="selecionada.jpg" 
+                alt="Capa da música Numa Ilha"
+            >
+            <div class="info">
+                <p>Numa ilha</p>
+                <span>Marina Sena</span>
+            </div>
+        </div>
+
+        <div class="controles">
+            <button aria-label="Música anterior">⏮</button>
+            <button class="play" aria-label="Play">▶</button>
+            <button aria-label="Próxima música">⏭</button>
+        </div>
+    </footer>
+
+</div>
+
+</body>
+</html>
